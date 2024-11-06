@@ -45,4 +45,4 @@ Hyperdrive may also encounter `ErrorResponse` wire protocol messages sent by you
 
 ### Improve performance
 
-Having query traffic written as transactions can limit performance. This is because in the case of a transaction, the connection must be held for the duration of the transaction, which limits connection multiplexing.  If there are multiple queries per transaction, this can be particularly impactful on connection multiplexing.  Where possible, we recommend not wrapping queries in transactions to allow the connections to be shared more aggressively.
+Having query traffic written as transactions can limit performance. This is because in the case of a transaction, the connection must be held for the duration of the transaction, which limits connection multiplexing. If there are multiple queries per transaction, this can be particularly impactful on connection multiplexing. Where possible, we recommend not wrapping queries in transactions to allow the connections to be shared more aggressively.
