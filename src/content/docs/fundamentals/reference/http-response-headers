@@ -1,0 +1,28 @@
+---
+pcx_content_type: reference
+title: Cloudflare HTTP response headers
+---
+
+import { Render } from "~/components";
+
+Cloudflare passes all HTTP response headers from your origin web server and adds additional headers as specified below.
+
+:::note
+
+Cloudflare may remove HTTP request headers with names considered invalid [according to NGINX](https://nginx.org/en/docs/http/ngx_http_core_module.html#ignore_invalid_headers) — for example, header names containing a `.` (dot) character.
+:::
+
+## CF-RAY
+
+The `CF-ray` header (otherwise known as a [Ray ID](/fundamentals/reference/cloudflare-ray-id/)) is a hashed value that encodes information about the data center and the visitor’s request. For example: `CF-RAY: 230b030023ae2822-SJC`.
+
+## CF-Cache-Status
+
+See our [Cloudflare cache responses](/cache/concepts/cache-responses/) for more information
+
+# Headers that Cloudflare will strip from the response
+
+* X-Accel-Buffering
+* X-Accel-Charset
+* X-Accel-Limit-Rate
+* X-Accel-Redirect
