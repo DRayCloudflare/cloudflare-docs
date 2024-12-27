@@ -1,9 +1,11 @@
 ---
 pcx_content_type: reference
-title: Cloudflare HTTP request headers
+title: Cloudflare HTTP headers
 ---
 
 import { Render } from "~/components";
+
+# Request headers
 
 Cloudflare passes all HTTP request headers to your origin web server and adds additional headers as specified below.
 
@@ -148,3 +150,24 @@ When using Spectrum with a TCP application, these headers are not visible at the
 
 - Use an HTTP or HTTPS Spectrum app instead of TCP
 - Use the [Proxy Protocol feature](/spectrum/how-to/enable-proxy-protocol/)
+
+# Response headers removed
+
+Cloudflare passes all response headers from the origin back to the requester with the exception of the following headers specified below.
+
+* X-Accel-Buffering
+* X-Accel-Charset
+* X-Accel-Limit-Rate
+* X-Accel-Redirect
+
+# Response headers added
+
+Cloudflare adds the following response headers specified below.
+
+## Cf-Ray
+
+The `Cf-Ray` value returned to the requester will be the same `Cf-Ray` value that was sent to the origin.
+
+## Cf-Cache-Status
+
+A list of all possilbe `Cf-Cache-Status` values is contained in [Cloudflare cache responses](/cache/concepts/cache-responses/)
