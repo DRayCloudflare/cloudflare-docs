@@ -448,7 +448,7 @@
 /fundamentals/get-started/how-cloudflare-works/ /fundamentals/concepts/how-cloudflare-works/ 301
 /fundamentals/get-started/cloudflare-cookies/ /fundamentals/reference/policies-compliances/cloudflare-cookies/ 301
 /fundamentals/get-started/google-analytics/ /fundamentals/reference/google-analytics/ 301
-/fundamentals/get-started/http-request-headers/ /fundamentals/reference/http-request-headers/ 301
+/fundamentals/get-started/http-request-headers/ /fundamentals/reference/http-headers/ 301
 /fundamentals/get-started/network-ports/ /fundamentals/reference/network-ports/ 301
 /fundamentals/get-started/basic-tasks/improve-seo/ /fundamentals/basic-tasks/improve-seo/ 301
 /fundamentals/get-started/basic-tasks/allow-cloudflare-ip-addresses/ /fundamentals/concepts/cloudflare-ip-addresses/ 301
